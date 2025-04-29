@@ -57,13 +57,13 @@ cursor.close()
 conn.close()
 
 
-# --- Filter and convert types ---
+
 df = df[df['PREMIUMSPAY'] > 0]
 df['AMOUNT'] = df['AMOUNT'].astype(float)
 df['PREMIUMSPAY'] = df['PREMIUMSPAY'].astype(float)
 df['CLAIM_RATIO'] = df['AMOUNT'] / df['PREMIUMSPAY']
 
-# --- Plot distribution ---
+
 df['CLAIM_RATIO'].hist(bins=30)
 plt.title("Claim Ratio Distribution")
 plt.xlabel("Claim Ratio")
