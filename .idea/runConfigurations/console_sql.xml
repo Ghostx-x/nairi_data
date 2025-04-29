@@ -1,0 +1,8 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="console.sql" type="DatabaseScript" editBeforeRun="true" nameIsGenerated="true">
+    <script-file value="$PROJECT_DIR$/script.py" />
+    <script-mode>FILE</script-mode>
+    <data-source id="39b371bd-1a4c-4499-8adc-afb2f345052b" namespace="database/&quot;thesoft_db&quot;/schema/&quot;public&quot;" />
+    <method v="2" />
+  </configuration>
+</component>
