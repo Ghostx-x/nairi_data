@@ -11,8 +11,6 @@ import matplotlib.pyplot as plt
 import psycopg2 as sql
 import numpy as np
 
-# Connect to the database and fetch data
-
 dbname = 'thesoft_db'
 user = 'server_api'
 host = '192.168.100.152'
