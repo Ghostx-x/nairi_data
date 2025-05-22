@@ -108,7 +108,6 @@ region_summary['area_type'] = region_summary['claim_count'].apply(
 region_summary.to_csv('arm_claim_data.csv', index=False)
 print("Exported data to 'arm_claim_data.csv'")
 
-# Urban vs. rural summary
 urban_rural_summary = region_summary.groupby('area_type').agg({
     'avg_claim_amount': 'mean',
     'avg_claim_rate': 'mean',
@@ -118,7 +117,7 @@ urban_rural_summary = region_summary.groupby('area_type').agg({
 print("\nUrban vs. Rural Comparison in ARM:")
 print(urban_rural_summary)
 
-# Insights and Recommendations
+
 print("\nInsights:")
 if not top_amounts.empty:
     top_region = top_amounts.iloc[0]['REGION']
